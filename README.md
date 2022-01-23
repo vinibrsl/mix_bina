@@ -1,6 +1,6 @@
 # mix_bina
-Bina helps you to list all callers of a function inside your Elixir project.
-This is useful while debugging or refactoring. For example:
+Bina helps you finding all callers of a function in your Elixir project. This is
+useful while debugging or refactoring. For example:
 
 ```
 $ mix bina MyModule.my_fun/1

@@ -35,7 +35,7 @@ defmodule Mix.Tasks.Bina do
     Enum.reduce_while(callees, :ok, fn callee, acc ->
       case Bina.Storage.insert(callee) do
         :ok -> {:cont, acc}
-        {:error, cause} = error -> {:halt, error}
+        {:error, _cause} = error -> {:halt, error}
       end
     end)
   end
