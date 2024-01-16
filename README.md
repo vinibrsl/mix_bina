@@ -20,7 +20,7 @@ a dev dependency to your project's `mix.exs`:
 ```elixir
 defp deps do
   [
-    {:mix_bina, "~> 0.1", only: [:dev], runtime: false}
+    {:bina, "~> 0.1", only: [:dev, :test], runtime: false, git: "https://github.com/vinibrsl/mix_bina.git"}
   ]
 end
 ```
